@@ -10,6 +10,8 @@
 최솟값 : 41
 
 */
+
+//강의
 function solution(arr) {
   let answer
   let sum = 0,
@@ -27,3 +29,22 @@ function solution(arr) {
 
 arr = [12, 77, 38, 41, 53, 92, 85]
 console.log(solution(arr))
+
+//forEach()
+function solution2() {
+  let answer = []
+  let sum = 0
+  let min = Number.MAX_SAFE_INTEGER
+
+  arr.forEach((num) => {
+    if (num % 2 !== 0) {
+      sum += num
+      if (num < min) min = num
+    }
+  })
+  answer.push(sum)
+  answer.push(min)
+}
+
+const arr2 = [12, 77, 38, 41, 53, 92, 85]
+console.log(solution2(arr2))
