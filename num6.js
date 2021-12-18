@@ -10,6 +10,11 @@
 최솟값 : 41
 
 */
+function solution(arr1) {
+  let answer
+  let sum = 0
+  min = Number.MAX_SAFE_INTEGER
+}
 
 //강의
 function solution(arr) {
