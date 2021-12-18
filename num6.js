@@ -48,3 +48,7 @@ function solution2() {
 
 const arr2 = [12, 77, 38, 41, 53, 92, 85]
 console.log(solution2(arr2))
+
+// 두 빈 배열 동시 선언 하는 방법
+//디스트럭쳐링 할당 방법으로 작성
+let [answer, min_odd] = [[], []]
