@@ -1,17 +1,15 @@
 //10부제
 /* 
 자동차 번호의 일의 자리 숫자와
-날짜의 일의 자리 숫자가 동일한 프로그램을 작성하세요
+날짜의 일의 자리 숫자가 동일한 프로그램을 작성하세요.
+
+주어진 날짜와 자동차의 일의 자리 숫자를 보고 10부제를 위반하는 차량의 대수를 출력합니다.
 */
 function solution(day, arr) {
   let answer = 0
   for (let x of arr) {
-    if (x % 10 === day) {
-      answer++
-    }
-    return answer
+    if (x % 10 === day) answer++
   }
-
   return answer
 }
 //10으로 숫자를 나누게 되면
